@@ -1,5 +1,5 @@
-# Resume
+# Resume in a man page
 
-This is a simple git repo to house my resume in various formats.  You can find the HTML version of this resume online at: 
+Although you can always clone my resume from GitHub, the single HTML file is available anytime at
 
 * http://majorhayden.com/
