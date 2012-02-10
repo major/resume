@@ -1,4 +1,4 @@
-![Major's Photo](http://cdn.rackerhacker.com/wp-content/uploads/2010/12/paper_on_head_cropped-150x150.jpg)
+![Major's Photo](http://cdn.rackerhacker.com/wp-content/uploads/2012/01/avatar_hanalei_bay-1.jpg)
 # Frequently Asked Questions
 
 ### I don't know how to use Git or GitHub, but I want to look at your resume.
