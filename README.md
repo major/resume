@@ -30,4 +30,4 @@ I remembered these shenanigans when I was looking to rework my resume last year 
 [Look no further](http://thesocialnerd.com). (Please don't take anything there seriously, though.) ;)
 
 #### I have more questions for you.
-Find me on [Twitter](http://twitter.com/rackerhacker) or on Freenode IRC as rackerhacker.
+Find me on [Twitter](http://twitter.com/rackerhacker) or on Freenode IRC as mhayden.
