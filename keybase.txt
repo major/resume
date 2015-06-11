@@ -1,0 +1,84 @@
+==================================================================
+https://keybase.io/mhayden
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://majorhayden.com
+  * I am mhayden (https://keybase.io/mhayden) on keybase.
+  * I have a public key with fingerprint 1BF9 9264 9596 0033 698C  252B 7370 51E0 C101 1FB1
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.8"
+        },
+        "key": {
+            "fingerprint": "1bf9926495960033698c252b737051e0c1011fb1",
+            "host": "keybase.io",
+            "key_id": "737051E0C1011FB1",
+            "uid": "da40e0980c089ca48243733774134e00",
+            "username": "mhayden"
+        },
+        "merkle_root": {
+            "ctime": 1434047780,
+            "hash": "cc1c0f676d67f8eb0d4c0bc0c82a36fc60bd1fd6166192cebf7245f9c8a40e6bd48a73fb347e9384e447174a42e907c668feee16247d91ebefe8c626071c853e",
+            "seqno": 245055
+        },
+        "service": {
+            "hostname": "majorhayden.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1434047950,
+    "expire_in": 157680000,
+    "prev": "f63f67e52d8b9749644c0ef0805bf5b09e86cabf13bd2f39d9c03d5e6189ee09",
+    "seqno": 113,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2
+
+owFVkn1QFVUYxi9QgjaipZMJKrhF6QC3s7tnvy4TmQSEYgkMk6lEu2fPcpePu5e9
+1ytXkhC1QDBLNAMFp4szmh/kd6VppqASKhYaogw1MJI0JQ2KH2nULuKU5689e37v
+c97nec9HowMsQX4uZ8ov3/mF7fFr7pUs6d6L5woJSZO9hK2QQLkqdrjNL4eYhwkb
+kYO9kujCVlULd2gytma7woeZKMKDdZeqOQwKWDkrTyyNMnGzWFEdWVh36qqpRZCS
+IggUCwVGYAGgaVbgEcVQEkdzgCExQCQgSUUiDUm75nI/cisxpJmpysbfB3w8iDP5
+hJkmv2joQBYhwEDgAQK8gETIU5DmaJrjIElDDIAJurA+bCnPLnpl7DDbzcN6Ti7O
+1DVtyDNyqyZBQhoCyHE8MBoSXXajBiESAYXlWJnlFB5LQIYISAggnhJpVkEskGRS
+kVmSZUmBQlhSOAoyioB4szVWkiEvcrQi0ZDDAs1DDCFHclCEFBYAh1iWVzDGJEtB
+ThZILGEF84ilWMCRiGdobDhw4XyHRtgMWcAwS8297lERNvs2U3toTszW9AcGrUjL
+M+qcuubWkJZrHNrdbqfN9O32Ok14Md4jZQ7rZEqqQzbG9v+5kgb6aCYCY2SCC5yq
+jjNVk2A4lgfGMu/BHkNTYWkjJ8xQMi8JHBRYaCSFFcADRlIYCQiYZ5EoKSQtyZRC
+C7KAAC0zmCV5ARtD/M8pSdJGp2KWIepSsxyie5GOiaVl/pMes/gFWUY87m8+Xcuo
+kWMfvufiZWMtW8+ej03YTYbrTzmX/Z3kmDk3aXb0tZolV2S85Qvw/g9JuZPRjorW
+rwI8e3v/Carq3hb65/iUxhv5t7ZHidsmfJK8vLh2xJd2a3XK6bzLirdxwzQ4o/H3
+BS1jqIkDJypfqYs8EnN/1nNzLq+f7Gs/ELsumH7GPggbFvYFFaWsrb+wLGzqKW/0
+nujQ0sGM5vGnF4loV0fkmd/SCivuK78eTnXu39S8YnKE77WslX0Jbezt7ENbBfLO
+i8tbMiJHjZrRS/YWN4n30v/65o4v8Z299IV3v39556eewZ7Nvu2XutXIcmIV01nS
+fcg7aW5BbMnR0dUbr0+/n9lp7Z8z4eoY2BNcJm8kZh3sjFM/bH36zYUXKm0RtfEf
+T/SIIU1ZdaUNndWxI+n5gdKawWMBKXf1hLQt/u1/1EQca19dsH6mb8WPRf1bbzfW
+D3S88VaJ78ny5Ia2qbBqQ9O+80evDtg6nn39bGr3/J9DDt8MqXZS19f43v4a7e/q
+OzTtiOvi9HGB815IbnsptaX89uyYxpj88E05t1I2B7XdjIk7jprm7a6hz6yuGDhn
+U+prcae7qv2De/N2aBUHip6fQu/qKc9YvPazxesq+8o2LnlipyOqMm6cbcp7/cc7
+00vvxocd7LpyKSMt8VQi6uNzrjmiNx2ZgEYvOLlz4f7A5BEnfwpedezijROvhobv
++7YedLXCus+pwpp/AQ==
+=v87T
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mhayden
+
+==================================================================
+
+
