@@ -1,381 +1,287 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <title>major(7) - a social nerd - Linux man page</title>
-  <meta http-equiv="content-type" content="text/html;charset=utf-8">
-  <meta name="google-site-verification" content="aObtGDw4rtVcSovbNUyoZCn1l-H9Tmqp43TXqmkWjjY" />
-  <style type="text/css">
-    body {
-      font-family: monospace;
-      font-size: 12px;
-      color: #222222;
-      margin: 20px 10px 0px 20px;
-      text-align: left;
-    }
-    .manheader {
-      font-family: monospace;
-      font-size: 12px;
-      margin: 10px 0px 0px 0px;
-    }
-    h1 {
-      font-size: 12px;
-      font-weight: bold;
-      margin: 15px 0px 0px 0px;
-    }
-    .subtext {
-      margin: 0px 0px 10px 50px;
-      width: 575px;
-    }
-    .doublesubtext {
-      margin: 0px 0px 10px 70px;
-      width: 525px;
-    }
-    .triplesubtext {
-      margin: 0px 0px 10px 90px;
-      width: 475px;
-    }
-    .bottomcut {
-      margin-bottom: 0px;
-    }
-    a, a.active, a.visited, a.hover {
-      color: #222222;
-      text-decoration: underline;
-    }
-    .footer {
-      margin: 10px 0px 20px 0px;
-      color: #CCCCCC;
-    }
-    .linkfloater {
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      padding: 5px;
-      text-align: right;
-      background-color: #222222;
-      color: #FFFFFF;
-    }
-    .linkfloater a:link, .linkfloater a:visited, .linkfloater a:hover {
-      color: #00FF00;
-      text-decoration: underline;
-    }
+  <meta http-equiv='content-type' content='text/html;charset=utf8'>
+  <meta name='generator' content='Ronn-NG/v0.9.1 (http://github.com/apjanke/ronn-ng/tree/0.9.1)'>
+  <title>major_hayden(1) - a social nerd 🤓</title>
+  <style type='text/css' media='all'>
+  /* style: man */
+  body#manpage {margin:0}
+  .mp {max-width:100ex;padding:0 9ex 1ex 4ex}
+  .mp p,.mp pre,.mp ul,.mp ol,.mp dl {margin:0 0 20px 0}
+  .mp h2 {margin:10px 0 0 0}
+  .mp > p,.mp > pre,.mp > ul,.mp > ol,.mp > dl {margin-left:8ex}
+  .mp h3 {margin:0 0 0 4ex}
+  .mp dt {margin:0;clear:left}
+  .mp dt.flush {float:left;width:8ex}
+  .mp dd {margin:0 0 0 9ex}
+  .mp h1,.mp h2,.mp h3,.mp h4 {clear:left}
+  .mp pre {margin-bottom:20px}
+  .mp pre+h2,.mp pre+h3 {margin-top:22px}
+  .mp h2+pre,.mp h3+pre {margin-top:5px}
+  .mp img {display:block;margin:auto}
+  .mp h1.man-title {display:none}
+  .mp,.mp code,.mp pre,.mp tt,.mp kbd,.mp samp,.mp h3,.mp h4 {font-family:monospace;font-size:14px;line-height:1.42857142857143}
+  .mp h2 {font-size:16px;line-height:1.25}
+  .mp h1 {font-size:20px;line-height:2}
+  .mp {text-align:justify;background:#fff}
+  .mp,.mp code,.mp pre,.mp pre code,.mp tt,.mp kbd,.mp samp {color:#131211}
+  .mp h1,.mp h2,.mp h3,.mp h4 {color:#030201}
+  .mp u {text-decoration:underline}
+  .mp code,.mp strong,.mp b {font-weight:bold;color:#131211}
+  .mp em,.mp var {font-style:italic;color:#232221;text-decoration:none}
+  .mp a,.mp a:link,.mp a:hover,.mp a code,.mp a pre,.mp a tt,.mp a kbd,.mp a samp {color:#0000ff}
+  .mp b.man-ref {font-weight:normal;color:#434241}
+  .mp pre {padding:0 4ex}
+  .mp pre code {font-weight:normal;color:#434241}
+  .mp h2+pre,h3+pre {padding-left:0}
+  ol.man-decor,ol.man-decor li {margin:3px 0 10px 0;padding:0;float:left;width:33%;list-style-type:none;text-transform:uppercase;color:#999;letter-spacing:1px}
+  ol.man-decor {width:100%}
+  ol.man-decor li.tl {text-align:left}
+  ol.man-decor li.tc {text-align:center;letter-spacing:4px}
+  ol.man-decor li.tr {text-align:right;float:right}
   </style>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-1115744-9', 'auto');
-  ga('send', 'pageview');
-
-</script>
+  <style type='text/css' media='all'>
+  /* style: toc */
+  .man-navigation {display:block !important;position:fixed;top:0;left:113ex;height:100%;width:100%;padding:48px 0 0 0;border-left:1px solid #dbdbdb;background:#eee}
+  .man-navigation a,.man-navigation a:hover,.man-navigation a:link,.man-navigation a:visited {display:block;margin:0;padding:5px 2px 5px 30px;color:#999;text-decoration:none}
+  .man-navigation a:hover {color:#111;text-decoration:underline}
+  </style>
 </head>
-<body>
+<!--
+  The following styles are deprecated and will be removed at some point:
+  div#man, div#man ol.man, div#man ol.head, div#man ol.man.
 
-<div class="linkfloater">
-  <span>Major's Links</span><hr>
-  <a href="http://major.io/">major.io</a><br>
-  <a href="https://major.io/icanhazip-com-faq/">icanhazip.com</a><br><br>
-  <a href="http://github.com/major">GitHub</a><br>
-  <a href="http://twitter.com/majorhayden">Twitter</a><br>
-  <a href="https://plus.google.com/+MajorHayden/">Google+</a><br>
-  <a href="https://www.linkedin.com/in/majorhayden">LinkedIn</a><br><br>
-  Why does<br>this resume<br>look strange?<br>
-  It's a <a href="http://en.wikipedia.org/wiki/Man_page">man page</a>!
-</div>
+  The .man-page, .man-decor, .man-head, .man-foot, .man-title, and
+  .man-navigation should be used instead.
+-->
+<body id='manpage'>
+  <div class='mp' id='man'>
 
-<pre class="manheader">
-MAJOR(7)                           Linux User's Manual                            MAJOR(7)
-</pre>
-<h1>NAME</h1>
-<p class="subtext">
-  Major Hayden - a social nerd
-</p>
+  <div class='man-navigation' style='display:none'>
+    <a href="#NAME">NAME</a>
+    <a href="#SYNOPSIS">SYNOPSIS</a>
+    <a href="#DESCRIPTION">DESCRIPTION</a>
+    <a href="#OPTIONS">OPTIONS</a>
+    <a href="#HISTORY">HISTORY</a>
+    <a href="#SEE-ALSO">SEE ALSO</a>
+  </div>
 
-<h1>SYNOPSIS</h1>
-<p class="subtext">
-  major [--admin systems|database] [--contributor] [--developer] [--educator] <br />
-  [--leader] [--other]
-</p>
+  <ol class='man-decor man-head man head'>
+    <li class='tl'>major_hayden(1)</li>
+    <li class='tc'></li>
+    <li class='tr'>major_hayden(1)</li>
+  </ol>
 
-<h1>SUMMARY</h1>
-<p class="subtext">
-  I’m a Linux Engineer with skills in database administration, system
-  administration, application development and leadership. I enjoy connecting people with
-  technology solutions that are easy to use, affordable, and sustainable over
-  time.  I'm familiar with, and a huge supporter of, the DevOps culture and how
-  to make it work with a large team in a fast paced environment.
-</p>
-<p class="subtext">
-  Information security has also been an interest of mine.  As the Chief Security
-  Architect for Rackspace, I led a team of senior Windows, Linux and networking
-  engineers who were dedicated to increasing security within Rackspace and for
-  our customers. We provided critical security advisement to the business as a
-  whole and we fueled technical security projects that reduced risk, reduced
-  product development cycle time, and increased customer confidence.
-</p>
-<p class="subtext">
-  I was previously working on the OpenStack project and its integration
-  with Citrix Xenserver and Nicira's networking stack.  I also maintained our
-  high-availability clusters, Debian packaging and various system tools and scripts.
-  Our team created a highly automated continuous integration system with Jenkins
-  that allowed us to test and deploy new code much more rapidly than before.
-</p>
-<h1>OPTIONS</h1>
-<p class="subtext">
-  --admin systems
-</p>
-<p class="doublesubtext">
-  Extensive experience with the configuration, hardening, and maintenance of
-  various Linux distributions, including:
-</p>
-<p class="triplesubtext">
-  * Red Hat Enterprise Linux, Fedora, CentOS, Scientific Linux<br />
-  * Debian, Ubuntu<br />
-  * Gentoo<br />
-</p>
-<p class="doublesubtext">
-  Comfortable working with open source Xen and Xen Server installations in
-  large-scale environments. Able to customize and patch upstream pv-ops kernels
-  for use with Xen and also familiar with the preparation and maintenance of
-  base images for Xen guests.  Very proficient with KVM and the libvirt tool stack.
-</p>
-<p class="doublesubtext">
-  Experienced in rapid deployment and configuration management technologies
-  such as kickstarts, Red Hat Satellite Server, and Ansible.
-</p>
-<p class="doublesubtext">
-  Able to set up vital Linux infrastructure components including load balancers,
-  DNS servers, web/application servers, and mail servers.  Familiar with
-  network-level security policies as well as server-level security layers like
-  SELinux.  Well-versed in RouterOS network device management with RouterOS
-  software.
-</p>
-<p class="doublesubtext">
-  GIAC Certifications:
-</p>
-<p class="triplesubtext">
-  * <a href="http://www.giac.org/certified-professional/major-hayden/138471">
-      GIAC Security Essentials (GSEC)</a><br />
-  * <a href="http://www.giac.org/certified-professional/major-hayden/138471">
-      GIAC Certified UNIX Security Administrator (GCUX)</a><br />
-      &nbsp;&nbsp;GIAC Gold status<br />
-</p>
-<p class="doublesubtext">
-  Red Hat Linux Certifications:
-</p>
-<p class="triplesubtext">
-  * <a href="https://www.redhat.com/wapps/training/certification/verify.html?certNumber=110-268-455">
-      Red Hat Certified Architect Level II</a><br />
-  * <a href="https://www.redhat.com/wapps/training/certification/verify.html?certNumber=110-268-455">
-      Red Hat Certified Datacenter Specialist</a><br />
-  * <a href="https://www.redhat.com/wapps/training/certification/verify.html?certNumber=110-268-455">
-      Red Hat Certified Engineer - RHEL 4</a><br />
-  * <a href="https://www.redhat.com/wapps/training/certification/verify.html?certNumber=110-268-455">
-      Red Hat Certified Engineer - RHEL 5</a><br />
-  * <a href="https://www.redhat.com/wapps/training/certification/verify.html?certNumber=110-268-455">
-      Red Hat Certified Engineer - RHEL 6</a><br />
-</p>
-<p class="doublesubtext">
-  Red Hat Linux Certificates of Expertise:
-</p>
-<p class="triplesubtext">
-  * <a href="https://www.redhat.com/wapps/training/certification/verify.html?certNumber=110-268-455">
-    EX333 - Enterprise Security: Network Services</a><br />
-  * <a href="https://www.redhat.com/wapps/training/certification/verify.html?certNumber=110-268-455">
-    EX401 - Deployment and Systems Management</a><br />
-  * <a href="https://www.redhat.com/wapps/training/certification/verify.html?certNumber=110-268-455">
-    EX407 - Ansible Automation</a><br />
-  * <a href="https://www.redhat.com/wapps/training/certification/verify.html?certNumber=110-268-455">
-    EX423 - Directory Services and Authentication</a><br />
-  * <a href="https://www.redhat.com/wapps/training/certification/verify.html?certNumber=110-268-455">
-    EX436 - Storage Management</a><br />
-  * <a href="https://www.redhat.com/wapps/training/certification/verify.html?certNumber=110-268-455">
-    EX442 - System Monitoring and Performance Tuning</a><br />
-</p>
-<p class="subtext">
-  --admin database
-</p>
-<p class="doublesubtext">
-  Skilled in MySQL database administration for standalone servers as well as
-  replicated and clustered environments.  Authored
-  <a href="http://mysqltuner.com/">MySQLTuner</a> in an effort to efficiently
-  optimize database servers based on their specific workloads.
-</p>
-<p class="doublesubtext">
-  Currently a Certified MySQL Database Administrator.
-</p>
+  
 
-<p class="subtext">
-  --contributor
+<h2 id="NAME">NAME</h2>
+<p class="man-name">
+  <code>major_hayden</code> - <span class="man-whatis">a social nerd 🤓</span>
 </p>
-<p class="doublesubtext">
-  Served on the <a href="http://fedoraproject.org/wiki/Board">Fedora Project Board</a>
-  from 2012-2014.
-</p>
-<p class="doublesubtext">
-  Currently a
-  <a href="https://admin.fedoraproject.org/pkgdb/users/packages/mhayden">
-  package maintainer</a> for the following Fedora Linux packages:
-</p>
-<p class="triplesubtext">
-  * apt-mirror<br />
-  * drbd<br />
-  * httpry<br />
-  * mysqltuner<br />
-</p>
-<p class="doublesubtext">
-  All projects can be found in
-  <a href="https://github.com/major">GitHub</a>. Most efforts are
-  related to the following projects:
-</p>
-<p class="triplesubtext">
-  * <a href="https://github.com/major/mysql-json-bridge">
-      mysql-json-bridge</a><br />
-  * <a href="https://github.com/major/MySQLTuner-perl">
-      MySQLTuner-perl</a><br />
-  * <a href="https://github.com/major/kickstarts">
-      kickstarts</a><br />
-</p>
-<p class="doublesubtext">
-  I've contributed code to various OpenStack projects during my daily work at
-  Rackspace.  In addition, I've written scripts and tools to make managing
-  an OpenStack environment a little easier.  Although some are Rackspace-specific
-  and proprietary, I release a large amount of code on GitHub as open source.
-</p>
-<p class="doublesubtext">
-  A selection of projects I've contributed to over the years:
-</p>
-<p class="triplesubtext">
-  * <a href="https://github.com/ansible/ansible">ansible</a><br />
-  * <a href="https://github.com/openstack/ansible-hardening">ansible-hardening</a><br />
-  * <a href="https://github.com/haraldh/dracut">dracut</a><br />
-  * <a href="https://github.com/openstack/openstack-ansible">openstack-ansible</a><br />
-</p>
+<h2 id="SYNOPSIS">SYNOPSIS</h2>
 
-<p class="subtext">
-  --developer
-</p>
-<p class="doublesubtext">
-  <a href="https://github.com/openstack/ansible-hardening">ansible-hardening</a><br>
-  The ansible-hardening project is an Ansible role that applies hardening
-  standards from the Security Technical Implementation Guide (STIG) to systems
-  running CentOS 7, Debian Jessie, Fedora 26, openSUSE Leap, Red Hat
-  Enterprise Linux 7, SUSE Linux Enterprise 12, and Ubuntu 16.04
-</p>
-<p class="doublesubtext">
-  <a href="https://github.com/major/mysql-json-bridge">mysql-json-bridge</a><br>
-  Allows for MySQL results to be delivered via JSON.  Consumers need no access to the
-  databases being queried.
-</p>
-<p class="doublesubtext">
-  <a href="https://github.com/major/MySQLTuner-perl">mysqltuner</a><br>
-  MySQLTuner is a script written in Perl that will assist you with your MySQL
-  configuration and make recommendations for increased performance and stability.
-  Development has gone a bit dormant but I do what I can to keep it updated.
-</p>
-<p class="doublesubtext">
-  <a href="https://github.com/major/supernova">supernova</a><br>
-  The supernova wrapper for novaclient allows a user to store credentials for multiple
-  OpenStack environments and use them with simple command line arguments.  Credentials
-  can be stored in system keychains for increased security.
-</p>
-<p class="doublesubtext">
-  Currently focused on Python for work with OpenStack components but able to
-  work with Ruby, PHP, Perl, and shell scripting if needed.
-</p>
+<p><code>major</code> <code>--admin</code> systems<br>
+<code>major</code> <code>--contributor</code> open_source<br>
+<code>major</code> <code>--developer</code> python<br>
+<code>major</code> <code>--educator</code><br>
+<code>major</code> <code>--leader</code><br>
+<code>major</code> <code>--other</code><br></p>
 
-<p class="subtext">
-  --educator
-</p>
-<p class="doublesubtext">
-  Started multiple projects to share knowledge and assist other technical people:
-</p>
-<p class="triplesubtext">
-  * <a href="http://major.io/">
-      major.io</a> - words of wisdom from a server administrator<br />
-  * <a href="http://icanhazip.com/">
-      icanhazip</a> - simple public IP detection<br />
-  * <a href="http://mysqltuner.com/">
-      MySQL Tuner</a> - high-performance MySQL tuning script<br />
-</p>
-<p class="doublesubtext">
-  Compiled and taught classes covering various systems administration topics
-  including MySQL database administration, SSL certificates, and server
-  security.
-</p>
+<h2 id="DESCRIPTION">DESCRIPTION</h2>
 
-<p class="subtext">
-  --leader
-</p>
-<p class="doublesubtext">
-  Comfortable leading groups of technical people in customer-facing
-  environments.  Also able to provide individualized mentoring on technical and
-  career development topics.
-</p>
-<p class="doublesubtext">
-  Familiar with the agile development methodology and how to apply it to an
-  operations environment. Experienced with sprint planning, release planning,
-  and change management coordination.
-</p>
-<p class="subtext">
-  --other
-</p>
-<p class="doublesubtext">
-  Published articles and presentations:
-</p>
-<p class="triplesubtext">
-  <a href="http://www.scmagazine.com.au/News/340475,stop-disabling-selinux.aspx">Stop Disabling SELinux</a>, <em>SC Magazine</em><br>
-  <a href="https://bit.ly/evadethebreach">Evade the Breach</a>,
-    <em>Prepared for Accruent Insights 2014</em>
-</p>
-<p class="doublesubtext">
-  Formerly certified as an Emergency Medical Technician in Texas.
-</p>
+<p>Major is a Linux Engineer with skills in database administration, system
+administration, application development and leadership. He enjoys connecting
+people with technology solutions that are easy to use, affordable, and
+sustainable over time. He is familiar with, and a huge supporter of, the DevOps
+culture and how to make it work with a large team in a fast paced environment.</p>
 
-<h1>HISTORY</h1>
-<p class="subtext bottomcut">
-  * <a href="http://rackspace.com/">Rackspace</a>
-</p>
-<p class="doublesubtext">
-  - Principal Architect, OpenStack
-  - Cloud Architect, Cloud Servers<br>
-  - Chief Security Architect, Director<br>
-  - Linux Engineer, OpenStack / Next-Generation Cloud Servers<br>
-  - Engineering Manager, Cloud Servers Operations<br>
-  - Senior Systems Engineer<br>
-  - Linux Systems Administrator
-</p>
-<p class="subtext bottomcut">
-  * SecureTrust Corporation<br />
-  &nbsp;&nbsp;(now a wholly owned subsidiary of
-  <a href="http://trustwave.com/">Trustwave Holdings, Inc.</a>)
-</p>
-<p class="doublesubtext">
-  - VP of Operations<br />
-  - Lead Developer
-</p>
-<p class="subtext bottomcut">
-  * <a href="http://www.amr.net/">American Medical Response</a>
-</p>
-<p class="doublesubtext">
-  - Field Medic / EMT
-</p>
+<p>Information security has also been a key interest for him. As the Chief Security
+Architect for Rackspace, he led a team of senior Windows, Linux and networking
+engineers who were dedicated to increasing security within Rackspace and for
+their customers. He provided critical security advisement to the business as a
+whole and he fueled technical security projects that reduced risk, reduced
+product development cycle time, and increased customer confidence.</p>
 
-<h1>SEE ALSO</h1>
-<p class="subtext">
-  * E-mail:      major at mhtx dot net<br />
-  * Phone:       210.370.7667 (yes, that's 210.370.POOP)<br />
-  * Twitter:     <a href="http://twitter.com/majorhayden">majorhayden</a><br />
-  * LinkedIn:	 <a href="http://www.linkedin.com/in/majorhayden/">http://www.linkedin.com/in/majorhayden/</a><br />
-  * IRC:         mhayden on irc.freenode.net
-</p>
+<p>He previously worked on the OpenStack project and its integration with Citrix
+Xenserver and Nicira's networking stack. He also maintained high-availability
+clusters, Debian packaging and various system tools and scripts. The team
+created a highly automated continuous integration system with Jenkins that
+allowed them to test and deploy new code much more rapidly than before.</p>
 
-<pre class="manheader">
-Major Hayden                          2018-01-11                                  MAJOR(7)
-</pre>
+<h2 id="OPTIONS">OPTIONS</h2>
 
-<p class="footer">
-  &copy; 2018 Major Hayden
-</p>
+<ul>
+  <li>
+    <p><code>--admin systems</code></p>
+
+    <p>Extensive experience with the configuration, hardening, and maintenance of
+  various Linux distributions, including:</p>
+
+    <ul>
+      <li>Red Hat Enterprise Linux, Fedora, CentOS, Scientific Linux</li>
+      <li>Debian, Ubuntu</li>
+      <li>Gentoo</li>
+    </ul>
+
+    <p>Very proficient with KVM and the libvirt tool stack.  Experienced in rapid
+  deployment and configuration management technologies such as kickstarts, Red
+  Hat Satellite Server, and Ansible.</p>
+
+    <p>Able to set up vital Linux infrastructure components including load
+  balancers, DNS servers, web/application servers, and mail servers. Familiar
+  with network-level security policies as well as server-level security layers
+  like SELinux. Well-versed in RouterOS network device management with
+  RouterOS software.</p>
+
+    <p>GIAC Certifications:</p>
+
+    <ul>
+      <li><a href="https://www.giac.org/certified-professional/major-hayden/138471">GIAC Security Essentials (GSEC)</a></li>
+      <li>
+<a href="https://www.giac.org/certified-professional/major-hayden/138471">GIAC Certified UNIX Security Administrator (GCUX)</a> (GIAC Gold)</li>
+    </ul>
+
+    <p>Red Hat Linux Certifications:</p>
+
+    <ul>
+      <li>
+<a href="https://rhtapps.redhat.com/verify?certId=110-268-455">Red Hat Certified Engineer</a> <em>active</em>
+</li>
+      <li>
+<a href="https://rhtapps.redhat.com/verify?certId=110-268-455">Red Hat Certified Systems Administrator</a> <em>active</em>
+</li>
+      <li>
+<a href="https://rhtapps.redhat.com/verify?certId=110-268-455">Red Hat Certified Architect Level II</a> 💀</li>
+      <li>
+<a href="https://rhtapps.redhat.com/verify?certId=110-268-455">Red Hat Certified Datacenter Specialist</a> 💀</li>
+    </ul>
+
+    <p>Red Hat Linux Certificates of Expertise:</p>
+
+    <ul>
+      <li>
+<a href="https://rhtapps.redhat.com/verify?certId=110-268-455">EX407 - Ansible Automation</a> <em>active</em>
+</li>
+      <li>
+<a href="https://rhtapps.redhat.com/verify?certId=110-268-455">EX333 - Enterprise Security: Network Services</a>  💀</li>
+      <li>
+<a href="https://rhtapps.redhat.com/verify?certId=110-268-455">EX401 - Deployment and Systems Management</a>  💀</li>
+      <li>
+<a href="https://rhtapps.redhat.com/verify?certId=110-268-455">EX423 - Directory Services and Authentication</a>  💀</li>
+      <li>
+<a href="https://rhtapps.redhat.com/verify?certId=110-268-455">EX436 - Storage Management</a>  💀</li>
+      <li>
+<a href="https://rhtapps.redhat.com/verify?certId=110-268-455">EX442 - System Monitoring and Performance Tuning</a>  💀</li>
+    </ul>
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <p><code>--contributor</code></p>
+
+    <p>Served on the Fedora Project Board from 2012-2014.</p>
+
+    <p>Maintains <a href="https://src.fedoraproject.org/user/mhayden">several Fedora Linux packages</a>.</p>
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <p><code>--developer</code></p>
+
+    <p>Writes lots of open source software on <a href="https://github.com/major">GitHub</a> and
+<a href="https://gitlab.com/majorhayden">GitLab</a>.</p>
+
+    <p>Created icanhazip.com in 2009 and <a href="https://major.io/2021/06/06/a-new-future-for-icanhazip/">transferred ownership</a> of the site to Cloudflare in 2021.</p>
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <p><code>--educator</code></p>
+
+    <p>Maintains a blog at <a href="blog">major.io</a> that includes technical, career growth,
+personal development, and investing topics.</p>
+
+    <p>Compiled and taught classes covering various systems administration topics
+including MySQL database administration, SSL certificates, and server
+security.</p>
+  </li>
+  <li>
+    <p><code>--leader</code></p>
+
+    <p>Comfortable leading groups of technical people in customer-facing
+environments. Also able to provide individualized mentoring on technical and
+career development topics.</p>
+
+    <p>Familiar with the agile development methodology and how to apply it to an
+operations environment. Experienced with sprint planning, release planning, and
+change management coordination.</p>
+  </li>
+  <li>
+    <p><code>--other</code></p>
+
+    <p>Published several articles and <a href="https://www.slideshare.net/MajorHayden">presentations</a>.</p>
+
+    <p>Formerly certified as an Emergency Medical Technician in Texas.</p>
+  </li>
+</ul>
+
+<h2 id="HISTORY">HISTORY</h2>
+
+<ul>
+  <li>
+    <p>Rackspace <em>2006-2018</em></p>
+
+    <ul>
+      <li>Principal Architect, OpenStack - Cloud Architect, Cloud Servers</li>
+      <li>Chief Security Architect, Director</li>
+      <li>Linux Engineer, OpenStack / Next-Generation Cloud Servers</li>
+      <li>Engineering Manager, Cloud Servers Operations</li>
+      <li>Senior Systems Engineer</li>
+      <li>Linux Systems Administrator</li>
+    </ul>
+  </li>
+  <li>
+    <p>SecureTrust Corporation <em>2004-2006</em> <em>(now a wholly owned subsidiary of Trustwave Holdings, Inc.)</em></p>
+
+    <ul>
+      <li>VP of Operations</li>
+      <li>Lead Developer</li>
+    </ul>
+  </li>
+  <li>
+    <p>American Medical Response</p>
+
+    <ul>
+      <li>Field Medic / EMT</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="SEE-ALSO">SEE ALSO</h2>
+
+<ul>
+  <li>Email: <a href="mailto:major@mhtx.net" data-bare-link="true">major@mhtx.net</a>
+</li>
+  <li>Phone: 210-370-7667 (210-370-POOP)</li>
+  <li>Twitter: <a href="https://twitter.com/majorhayden">majorhayden</a>
+</li>
+  <li>GitHub: <a href="https://github.com/major">major</a>
+</li>
+  <li>Gitlab: <a href="https://gitlab.com/majorhayden">majorhayden</a>
+</li>
+  <li>IRC: mhayden on Libera</li>
+</ul>
+
+  <ol class='man-decor man-foot man foot'>
+    <li class='tl'></li>
+    <li class='tc'>June 2021</li>
+    <li class='tr'>major_hayden(1)</li>
+  </ol>
+
+  </div>
 </body>
 </html>

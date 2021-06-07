@@ -1,0 +1,156 @@
+major_hayden(1) -- a social nerd 🤓
+============================
+
+## SYNOPSIS
+
+`major` `--admin` systems<br>
+`major` `--contributor` open_source<br>
+`major` `--developer` python<br>
+`major` `--educator`<br>
+`major` `--leader`<br>
+`major` `--other`<br>
+
+## DESCRIPTION
+
+Major is a Linux Engineer with skills in database administration, system
+administration, application development and leadership. He enjoys connecting
+people with technology solutions that are easy to use, affordable, and
+sustainable over time. He is familiar with, and a huge supporter of, the DevOps
+culture and how to make it work with a large team in a fast paced environment.
+
+Information security has also been a key interest for him. As the Chief Security
+Architect for Rackspace, he led a team of senior Windows, Linux and networking
+engineers who were dedicated to increasing security within Rackspace and for
+their customers. He provided critical security advisement to the business as a
+whole and he fueled technical security projects that reduced risk, reduced
+product development cycle time, and increased customer confidence.
+
+He previously worked on the OpenStack project and its integration with Citrix
+Xenserver and Nicira's networking stack. He also maintained high-availability
+clusters, Debian packaging and various system tools and scripts. The team
+created a highly automated continuous integration system with Jenkins that
+allowed them to test and deploy new code much more rapidly than before.
+
+## OPTIONS
+
+* `--admin systems`
+
+    Extensive experience with the configuration, hardening, and maintenance of
+    various Linux distributions, including:
+
+    * Red Hat Enterprise Linux, Fedora, CentOS, Scientific Linux
+    * Debian, Ubuntu
+    * Gentoo
+
+    Very proficient with KVM and the libvirt tool stack.  Experienced in rapid
+    deployment and configuration management technologies such as kickstarts, Red
+    Hat Satellite Server, and Ansible.
+
+    Able to set up vital Linux infrastructure components including load
+    balancers, DNS servers, web/application servers, and mail servers. Familiar
+    with network-level security policies as well as server-level security layers
+    like SELinux. Well-versed in RouterOS network device management with
+    RouterOS software.
+
+    GIAC Certifications:
+
+    * [GIAC Security Essentials (GSEC)][GIAC link]
+    * [GIAC Certified UNIX Security Administrator (GCUX)][GIAC link] (GIAC Gold)
+
+    Red Hat Linux Certifications:
+
+    * [Red Hat Certified Engineer][Red Hat certs] *active*
+    * [Red Hat Certified Systems Administrator][Red Hat certs] *active*
+    * [Red Hat Certified Architect Level II][Red Hat certs] 💀
+    * [Red Hat Certified Datacenter Specialist][Red Hat certs] 💀
+
+    Red Hat Linux Certificates of Expertise:
+
+    * [EX407 - Ansible Automation][Red Hat certs] *active*
+    * [EX333 - Enterprise Security: Network Services][Red Hat certs]  💀
+    * [EX401 - Deployment and Systems Management][Red Hat certs]  💀
+    * [EX423 - Directory Services and Authentication][Red Hat certs]  💀
+    * [EX436 - Storage Management][Red Hat certs]  💀
+    * [EX442 - System Monitoring and Performance Tuning][Red Hat certs]  💀
+
+[GIAC link]: https://www.giac.org/certified-professional/major-hayden/138471
+[Red Hat certs]: https://rhtapps.redhat.com/verify?certId=110-268-455
+
+*   `--contributor`
+
+    Served on the Fedora Project Board from 2012-2014.
+
+    Maintains [several Fedora Linux packages][Fedora packages].
+
+[Fedora packages]: https://src.fedoraproject.org/user/mhayden
+
+*   `--developer`
+
+    Writes lots of open source software on [GitHub][github] and
+    [GitLab][gitlab].
+
+    Created icanhazip.com in 2009 and [transferred ownership][icanhazip
+    transfer] of the site to Cloudflare in 2021.
+
+[github]: https://github.com/major
+[gitlab]: https://gitlab.com/majorhayden
+[icanhazip transfer]: https://major.io/2021/06/06/a-new-future-for-icanhazip/
+
+*   `--educator`
+
+    Maintains a blog at [major.io](blog) that includes technical, career growth,
+    personal development, and investing topics.
+
+    Compiled and taught classes covering various systems administration topics
+    including MySQL database administration, SSL certificates, and server
+    security.
+
+*   `--leader`
+
+    Comfortable leading groups of technical people in customer-facing
+    environments. Also able to provide individualized mentoring on technical and
+    career development topics.
+
+    Familiar with the agile development methodology and how to apply it to an
+    operations environment. Experienced with sprint planning, release planning, and
+    change management coordination.
+
+*   `--other`
+
+    Published several articles and [presentations][presentations].
+
+    Formerly certified as an Emergency Medical Technician in Texas.
+
+[presentations]: https://www.slideshare.net/MajorHayden
+
+## HISTORY
+
+* Rackspace _2006-2018_
+
+    * Principal Architect, OpenStack - Cloud Architect, Cloud Servers
+    * Chief Security Architect, Director
+    * Linux Engineer, OpenStack / Next-Generation Cloud Servers
+    * Engineering Manager, Cloud Servers Operations
+    * Senior Systems Engineer
+    * Linux Systems Administrator
+
+* SecureTrust Corporation _2004-2006_ _(now a wholly owned subsidiary of Trustwave Holdings, Inc.)_
+
+    * VP of Operations
+    * Lead Developer
+
+* American Medical Response
+
+    * Field Medic / EMT
+
+## SEE ALSO
+
+* Email: [major@mhtx.net][email]
+* Phone: 210-370-7667 (210-370-POOP)
+* Twitter: [majorhayden][twitter]
+* GitHub: [major][github]
+* Gitlab: [majorhayden][gitlab]
+* IRC: mhayden on Libera
+
+[email]: mailto:major@mhtx.net
+[twitter]: https://twitter.com/majorhayden
