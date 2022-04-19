@@ -98,7 +98,7 @@ allowed them to test and deploy new code much more rapidly than before.
 
 *   `--educator`
 
-    Maintains a blog at [major.io](blog) that includes technical, career growth,
+    Maintains a blog at [major.io](https://major.io) that includes technical, career growth,
     personal development, and investing topics.
 
     Compiled and taught classes covering various systems administration topics
