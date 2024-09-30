@@ -1,0 +1,1 @@
+{"ignition":{"version":"3.4.0"},"passwd":{"users":[{"groups":["adm","docker","sudo","wheel"],"name":"major","sshAuthorizedKeys":["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDyoH6gU4lgEiSiwihyD0Rxk/o5xYIfA3stVDgOGM9N0"]}]}}
