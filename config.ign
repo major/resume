@@ -1,1 +1,71 @@
-{"ignition":{"version":"3.3.0"},"passwd":{"users":[{"name":"core","sshAuthorizedKeys":["ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIcfW3YMH2Z6NpRnmy+hPnYVkOcxNWLdn9VmrIEq3H0Ei0qWA8RL6Bw6kBfuxW+UGYn1rrDBjz2BoOunWPP0VRM= major@amdbox"]}]}}
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "groups": [
+          "wheel",
+          "sudo",
+          "docker"
+        ],
+        "name": "major",
+        "sshAuthorizedKeys": [
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDyoH6gU4lgEiSiwihyD0Rxk/o5xYIfA3stVDgOGM9N0"
+        ],
+        "uid": 1000
+      }
+    ]
+  },
+  "storage": {
+    "files": [
+      {
+        "path": "/etc/sudoers.d/major",
+        "contents": {
+          "compression": "",
+          "source": "data:,%23%20Allow%20major%20user%20passwordless%20sudo%20(same%20privileges%20as%20core%20user)%0Amajor%20ALL%3D(ALL)%20NOPASSWD%3A%20ALL%0A"
+        },
+        "mode": 288
+      },
+      {
+        "path": "/etc/systemd/zram-generator.conf",
+        "contents": {
+          "compression": "",
+          "source": "data:;base64,W3pyYW0wXQp6cmFtLXNpemUgPSByYW0gLyAyCmNvbXByZXNzaW9uLWFsZ29yaXRobSA9IHpzdGQKc3dhcC1wcmlvcml0eSA9IDEwMApmcy10eXBlID0gc3dhcAo="
+        },
+        "mode": 420
+      },
+      {
+        "path": "/usr/local/bin/install-k3s.sh",
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/3yQQW7UMBiF9z7Fa2YDC8eVIrEYqQuopiia0SAxRWJXOc6f2MSxI//OtEhcgA1X4IocAaWhYgGahVfvPX/6v82ValxQjWYrNqgDZ+099hXj0WWL+6SpcwNax7rx1OLVzC70OPYuPKEOfSJmnJ3GnZ+f4AJn0u1rYebkIbk7wOY88VapnnI5VFy6iG+oj6f7t4fDw746Pew+725vCqZ0pgQp/5CQV3IBtpAMKcQGJ8qYJwxzQyaGzvXoYsKov8SEmSmJcWhdgpygbBxJPSeqXPrCTFCUjUo6GEtJDRUvr/yqR/9vfYnkyhDGxscA+XEFbVfcfwB2jC3eXF9f/k2QsRHFYtittnV2McDEcfKU6Qq/fv74XrzU/p7qGPqsnX+2o/P2IuZlvxjbf3q3u/1wvKvf31yaIMdF4mo3+0L8DgAA//9zcNReGwIAAA=="
+        },
+        "mode": 493
+      },
+      {
+        "group": {
+          "name": "major"
+        },
+        "path": "/home/major/README-K3S.txt",
+        "user": {
+          "name": "major"
+        },
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/2yTv27bOhTGdz7FGZ1BEu71nQx4SBznD3JvAsTJnbpQ0pHJmiKJcw6bqFP3jt2CAln7XH2CPEJBybUzdBNIfh+/w++nt9eXL7AKhHcbuJkzbFBShGvPQqkRGzwr9WAsAw8s2INlaILv7DYRttAFGlUtRheGHr3AkxUDFy49w6WVu8ilUm+v377CLT4LbAQjL5T6qxyv0M6N8hklD5qBQhAINHlwasPJQgGMX1AlpsqFRruqtr6yk7zYzblko9TfJfyPZLthNLQMlLy3fjsa4HMMJHDzeLZe3d1eXF8uKxN6rHr9MVBV7lKN1W7OxTRZVuSlRhxsUcCHFlmpeQlnIQgL6TgNOOso9DCERMDoOhNYsAXCuM/d5UP1QbO1YlINH/IWQFGEJ4+0HDMcF7OarQQalu88D9s1ad+YZa+tPy5GLWbZuMSCxNWfZBGJg9dOqX9KWP3uDzabq7HCSytXqYaZ7cAjtthO+R8MHpq8P+SCxMijVCcx6MU2OoNSZsnaczYWg+P0xZ4axoZQci2RQkRywzuKSqV+fv8BF6glETKsva4dtgtVwGfSPfCTjjB7R52EnAGMdh2EDu5P/ztRBTwy0gKm55wdCIJI9pN1uEXOhzIchLodssmeIZg9kMbO7qC1PF59MjL7AuehSRnqcb6c5/gKCzAikRdVNdVaNqHf83QsQBWwQYTVv6eP5+uyn/4XTY2xgk0eFloUbR2rXwEAAP//qXeFrYcDAAA="
+        },
+        "mode": 420
+      }
+    ]
+  },
+  "systemd": {
+    "units": [
+      {
+        "enabled": true,
+        "name": "systemd-zram-setup@zram0.service"
+      }
+    ]
+  }
+}
